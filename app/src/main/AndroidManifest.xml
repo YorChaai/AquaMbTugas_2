@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Mainwebsite1"
+            android:exported="true" />
+        <activity
+            android:name=".mainwebsite"
+            android:exported="true" />
+        <activity
+            android:name=".Mainregister"
+            android:exported="true" />
+        <activity
+            android:name=".Mainlogin"
+            android:exported="true" />
+        <activity
             android:name=".Mainhome2"
             android:exported="true" />
         <activity

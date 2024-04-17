@@ -116,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
-        android:fontFamily="@font/mmedium"
+        android:fontFamily="@font/mbold"
         android:text="KEBAIKAN\nBERAWAL\nDARI SINI"
         android:textColor="@color/white"
         android:textFontWeight="700"
@@ -143,11 +143,11 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="71dp"
+        android:layout_height="43dp"
         android:background="@drawable/button1"
         android:minHeight="48dp"
-        android:onClick="login"
+        android:onClick="aqualogin"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="20dp"
@@ -156,8 +156,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.157"
-        app:srcCompat="@drawable/arrow1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintVertical_bias="0.176"
+        app:srcCompat="@drawable/arrow1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

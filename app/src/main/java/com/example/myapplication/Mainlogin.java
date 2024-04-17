@@ -15,22 +15,19 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-public class Mainhome2 extends AppCompatActivity {
+public class Mainlogin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainhome2);
-
-
+        setContentView(R.layout.activity_mainlogin);
     }
-
-    public void login1(View view) {
-        Intent intent = new Intent(Mainhome2.this,Mainlogin.class);
-        startActivity(intent );
+    public void website(View view) {
+        Intent intent = new Intent(Mainlogin.this, Mainwebsite1.class);
+        startActivity(intent);
     }
-    public void register1(View view) {
-        Intent intent = new Intent(Mainhome2.this,Mainregister.class);
-        startActivity(intent );
+    public void mainhome2(View view) {
+        Intent intent = new Intent(Mainlogin.this, Mainhome2.class);
+        startActivity(intent);
     }
 }

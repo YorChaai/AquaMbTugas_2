@@ -18,13 +18,15 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    public void login(View view) {
+    public void aqualogin(View view) {
         Intent intent = new Intent(MainActivity.this,Mainhome2.class);
         startActivity(intent );
 
