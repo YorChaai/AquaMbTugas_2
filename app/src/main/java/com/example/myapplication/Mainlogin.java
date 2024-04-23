@@ -22,12 +22,13 @@ public class Mainlogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainlogin);
     }
-    public void website(View view) {
-        Intent intent = new Intent(Mainlogin.this, Mainwebsite1.class);
-        startActivity(intent);
-    }
     public void mainhome2(View view) {
         Intent intent = new Intent(Mainlogin.this, Mainhome2.class);
         startActivity(intent);
     }
+    public void website(View view) {
+        Intent intent = new Intent(Mainlogin.this, Mainwebsite1.class);
+        startActivity(intent);
+    }
+
 }

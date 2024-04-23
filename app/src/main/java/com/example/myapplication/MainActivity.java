@@ -26,9 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void aqualogin(View view) {
+    public void aqualogi(View view) {
         Intent intent = new Intent(MainActivity.this,Mainhome2.class);
         startActivity(intent );
-
     }
 }

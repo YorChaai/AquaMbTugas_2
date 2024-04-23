@@ -14,11 +14,11 @@ public class Mainregister extends AppCompatActivity {
         setContentView(R.layout.activity_mainregister);
     }
     public void mainhome3(View view) {
-        Intent intent = new Intent(Mainregister.this, Mainwebsite1.class);
+        Intent intent = new Intent(Mainregister.this, Mainhome2.class);
         startActivity(intent);
     }
     public void register(View view) {
-        Intent intent = new Intent(Mainregister.this, Mainhome2.class);
+        Intent intent = new Intent(Mainregister.this,Mainlogin .class);
         startActivity(intent);
     }
 }

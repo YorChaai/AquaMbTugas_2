@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Mainregister">
@@ -10,7 +11,7 @@
         android:id="@+id/imageback"
         android:layout_width="71dp"
         android:layout_height="43dp"
-        android:background="@drawable/button1"
+        android:background="@drawable/button3"
         android:minHeight="48dp"
         android:onClick="mainhome3"
         android:paddingLeft="20dp"
@@ -26,113 +27,180 @@
         app:srcCompat="@drawable/ic_arrowback" />
 
     <TextView
-        android:id="@+id/textlogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:fontFamily="@font/mbold"
-        android:text="Login"
-        android:textFontWeight="600"
-        android:textSize="20sp"
+        android:id="@+id/font5"
+        android:layout_width="171dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/montserratbold"
+        android:gravity="center"
+        android:text="Registrasi"
+        android:textColor="#4D4D4D"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/font6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
         android:text="Nama Lengkap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textlogin" />
+        android:textColor="#4D4D4D"
+        android:layout_marginLeft="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext1"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/button"
-        android:layout_width="265dp"
-        android:layout_height="42dp"
-        android:background="@drawable/button2"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn02"
+        android:foregroundGravity="center"
+        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/font5"
+        app:startIconDrawable="@drawable/group"
+        app:startIconTint="#1A529D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ems="14"
+            android:inputType="textCapWords"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/password"
+        android:id="@+id/font7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
         android:text="Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        android:textColor="#4D4D4D"
+        android:layout_marginLeft="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext2"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="265dp"
-        android:layout_height="42dp"
-        android:background="@drawable/button2"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn02"
+        android:foregroundGravity="center"
+        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext1"
+        app:startIconDrawable="@drawable/email"
+        app:startIconTint="#1A529D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ems="14"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/email11"
+        android:id="@+id/font8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
         android:text="Kata Sandi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        android:textColor="#4D4D4D"
+        android:layout_marginLeft="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext3"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/button11"
-        android:layout_width="265dp"
-        android:layout_height="42dp"
-        android:background="@drawable/button2"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext3"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn02"
+        android:foregroundGravity="center"
+        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password11" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext2"
+        app:startIconDrawable="@drawable/look"
+        app:startIconTint="#1A529D"
+        app:passwordToggleDrawable="@drawable/mata"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#1A529D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ems="14"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/password11"
+        android:id="@+id/font9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Konfismasi Kata Sandi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:text="Konfirmasi Kata Sandi"
+        android:textColor="#4D4D4D"
+        android:layout_marginLeft="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext4"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="265dp"
-        android:layout_height="42dp"
-        android:background="@drawable/button2"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext4"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn02"
+        android:foregroundGravity="center"
+        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email11" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext3"
+        app:startIconDrawable="@drawable/look"
+        app:passwordToggleDrawable="@drawable/mata"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#1A529D"
+        app:startIconTint="#1A529D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ems="14"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnlogin3"
-        android:layout_width="261dp"
-        android:layout_height="53dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="564dp"
-        android:background="@drawable/button1"
-        android:backgroundTint="@color/blue2"
-        android:fontFamily="@font/mmedium"
-        android:onClick="register"
-        android:text="Register"
+        android:id="@+id/btn4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn01"
+        android:text="Registrasi"
+        android:textAllCaps="false"
         android:textColor="@color/white"
+        android:onClick="register"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
