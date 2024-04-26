@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".sidebar_navigation"
+            android:exported="true" />
+        <activity
             android:name=".Mainwebsite1"
             android:exported="true" />
         <activity

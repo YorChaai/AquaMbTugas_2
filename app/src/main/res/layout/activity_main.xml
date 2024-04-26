@@ -46,11 +46,11 @@
         android:layout_width="646dp"
         android:layout_height="497dp"
         android:layout_marginStart="42dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="536dp"
         android:layout_marginEnd="42dp"
         android:src="@drawable/picture5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,11 +70,11 @@
         android:id="@+id/imageView8"
         android:layout_width="386dp"
         android:layout_height="368dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="416dp"
+        android:layout_marginTop="404dp"
         android:layout_marginEnd="42dp"
         android:src="@drawable/botolaqua1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -149,7 +149,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.027"
+        app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/arrow1"
         tools:ignore="SpeakableTextPresentCheck" />
 
