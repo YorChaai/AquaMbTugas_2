@@ -49,12 +49,17 @@
         <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/drawable/panah.xml" value="0.23657407407407408" />
         <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/drawable/rectangle_11.xml" value="0.12824074074074074" />
         <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/drawable/rectangle_4.xml" value="0.12824074074074074" />
+        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/drawable/rectangle_5.xml" value="0.12824074074074074" />
         <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_mainhome2.xml" value="0.264" />
         <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_mainlogin.xml" value="0.264" />
         <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_mainregister.xml" value="0.264" />
-        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_mainwebsite1.xml" value="0.22233009708737864" />
-        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_sidebar_navigation.xml" value="0.10601851851851851" />
+        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_mainwebsite1.xml" value="0.4" />
+        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_scan_ktpaqua.xml" value="0.2222222222222222" />
+        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_scan_tutupbotolaqua.xml" value="0.2222222222222222" />
+        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_selamat_claimtutupbotolaqua.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_selamat_claimtututbotolaqua.xml" value="0.2222222222222222" />
+        <entry key="..\:/AndroidProject/tugas3/AquaMBdiofavian/app/src/main/res/layout/activity_sidebar_navigation.xml" value="0.37065637065637064" />
         <entry key="..\:/MercuBuana/Diktat_Kuliah/ModulAndroid/Android 20202021/tutorial1/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>

@@ -191,7 +191,7 @@
                 android:elevation="10dp">
 
 
-                <Button
+                <ImageView
                     android:id="@+id/group_361"
                     android:layout_width="164.46dp"
                     android:layout_height="101dp"
@@ -200,6 +200,7 @@
                     android:layout_marginEnd="19dp"
                     android:layout_marginBottom="29dp"
                     android:background="@drawable/group_361"
+                    android:onClick="ScanBotol"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView

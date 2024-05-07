@@ -139,7 +139,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/tombol"
         android:minHeight="48dp"
-        android:onClick="aqualogi"
+        android:onClick="aqualogin"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="20dp"

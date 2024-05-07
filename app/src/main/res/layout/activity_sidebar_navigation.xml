@@ -143,8 +143,6 @@
             android:layout_marginLeft="28dp"
             app:srcCompat="@drawable/line_sidebar" />
 
-
-
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

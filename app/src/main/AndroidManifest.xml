@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Selamat_claimtutupbotolaqua"
+            android:exported="true" />
+        <activity
+            android:name=".Scan_tutupbotolaqua"
+            android:exported="true" />
+        <activity
+            android:name=".Scan_ktpaqua"
+            android:exported="true" />
+        <activity
             android:name=".sidebar_navigation"
             android:exported="true" />
         <activity
