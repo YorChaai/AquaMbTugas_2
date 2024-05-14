@@ -43,10 +43,15 @@ Hadiah Menarik
 Temukan kode\ndibalik tutup botol
 </string>
 
-    <string name="some_id">
+    <string name="some1_id">
 30
 </string>
-
+    <string name="poin">
+Poin Anda
+        </string>
+    <string name="poin_angka">
+300
+</string>
     <string name="scan_tutup_">
 Scan Tutup Botol
 </string>
@@ -63,6 +68,10 @@ Setiap kali Anda berhasil memindai kode yang belum pernah diklaim sebelumnya, An
     Scan KTP untuk melanjutkan proses klaim tutup botol. Pastikan foto KTP terlihat dengan jelas
     </string>
 
+    <string name="redeemvagan">
+RedeemVaganza
+</string>
+
     <string name="selamat">
         Selamat Anda Berhasil\nKlaim Tutup Botol 🎉
     </string>
@@ -71,4 +80,7 @@ Setiap kali Anda berhasil memindai kode yang belum pernah diklaim sebelumnya, An
         Klaim tutup botol lainnya dan\ntukarkan hadiah menarik
     </string>
 
+    <string name="selamatklaim">
+        Selamat Anda Mendapatkan Undian ExtraVaganza🎉
+    </string>
 </resources>

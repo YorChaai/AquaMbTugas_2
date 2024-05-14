@@ -11,6 +11,7 @@ import androidx.core.view.GravityCompat;
 import android.content.Intent;
 
 
+
 public class Mainwebsite1 extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -24,6 +25,8 @@ public class Mainwebsite1 extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         groupButton = findViewById(R.id.group_869);
 
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+
         groupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,6 +37,15 @@ public class Mainwebsite1 extends AppCompatActivity {
     }
     public void ScanBotol(View view) {
         Intent intent = new Intent(Mainwebsite1.this, Scan_tutupbotolaqua.class);
+        startActivity(intent);
+    }
+
+    public void ScanBotol1(View view) {
+        Intent intent = new Intent(Mainwebsite1.this, Scan_tutupbotolaqua.class);
+        startActivity(intent);
+    }
+    public void reedemv(View view) {
+        Intent intent = new Intent(Mainwebsite1.this, Redeemvolume1.class);
         startActivity(intent);
     }
 }

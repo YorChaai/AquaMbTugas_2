@@ -6,16 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Selamat_claimtutupbotolaqua extends AppCompatActivity {
+public class selamat_undian extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_selamat_claimtutupbotolaqua);
+        setContentView(R.layout.activity_selamat_undian);
     }
-    public void backtutupbotol(View view) {
-        Intent intent = new Intent(Selamat_claimtutupbotolaqua.this,Scan_tutupbotolaqua .class);
+    public void spinwheel2(View view) {
+        Intent intent = new Intent(selamat_undian.this, spinwheel2.class);
         startActivity(intent);
     }
-
 }

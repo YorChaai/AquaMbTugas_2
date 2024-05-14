@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Scan_ktpaqua">
-
     <RelativeLayout
         android:id="@+id/group_385"
         android:layout_width="220dp"
@@ -18,13 +17,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/vector"
+            android:id="@+id/back2"
             android:layout_width="35dp"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
             android:background="@drawable/panah1"
-            android:onClick="ScanTutupBotol"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
@@ -32,7 +30,8 @@
             android:layout_width="198dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="0dp"
+            android:layout_marginEnd="-39dp"
+            android:fontFamily="@font/montserratsemibold"
             android:gravity="center_horizontal|center_vertical"
             android:lineSpacingExtra="3sp"
             android:text="@string/scan_tutup_"
@@ -81,45 +80,86 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/total_tutup" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
         android:layout_width="348dp"
         android:layout_height="220dp"
         android:layout_marginTop="34dp"
         android:src="@drawable/group_388"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameColor="@android:color/white"
+        app:frameCornersSize="50dp"
+        app:frameCornersRadius="0dp"
+        app:frameAspectRatioWidth="1"
+        app:frameAspectRatioHeight="1"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:frameVerticalBias="0.5"
+        app:maskColor="#77000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/setiap_kali" />
 
+    <RelativeLayout
+        android:id="@+id/group_386"
+        android:layout_width="223dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanner_view">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_494" />
+
+        <TextView
+            android:id="@+id/tv_textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/frame_3670"
         android:layout_width="319dp"
         android:layout_height="122dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/group_386">
 
         <Button
-            android:id="@+id/btnlogin"
+            android:id="@+id/submit2"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:background="@drawable/button1"
             android:backgroundTint="@color/blue2"
-            android:onClick="SelamatClaimTutupBotol"
+            android:fontFamily="@font/montserratsemibold"
             android:text="Submit"
-            android:textColor="@color/white" />
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/cancel2"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="7dp"
             android:background="@drawable/button1"
-            android:text="Cancel" />
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
 
     </RelativeLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
