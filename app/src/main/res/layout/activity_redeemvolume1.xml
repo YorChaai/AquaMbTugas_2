@@ -24,8 +24,8 @@
             android:layout_height="20dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
-            android:onClick="main_menu"
             android:background="@drawable/panah1"
+            android:onClick="main_menu"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
@@ -67,10 +67,10 @@
         android:id="@+id/rectangle_11"
         android:layout_width="347dp"
         android:layout_height="70dp"
-        android:layout_marginTop="628dp"
+        android:layout_marginTop="716dp"
         android:background="@drawable/rectangle_11"
-        android:text="Redeem"
         android:onClick="redeemv2"
+        android:text="Redeem"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

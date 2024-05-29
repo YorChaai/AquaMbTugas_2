@@ -131,7 +131,6 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
                         android:background="@drawable/horz_1"
-                        android:onClick="reedemv"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <RelativeLayout
@@ -192,12 +191,11 @@
                         android:id="@+id/oip_4_3"
                         android:layout_width="317dp"
                         android:layout_height="214dp"
-                        android:layout_toRightOf="@id/oip_4_2"
+                        android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:layout_alignParentTop="true"
-                        android:background="@drawable/horz_3"
-                        />
+                        android:layout_toRightOf="@id/oip_4_2"
+                        android:background="@drawable/horz_3" />
                 </RelativeLayout>
             </HorizontalScrollView>
 
@@ -221,9 +219,9 @@
                     android:layout_height="101dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:onClick="ScanBotol1"
                     android:layout_marginEnd="19dp"
                     android:layout_marginBottom="29dp"
+                    android:onClick="ScanBotol1"
                     android:background="@drawable/group_361"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -237,8 +235,9 @@
                     android:layout_marginBottom="156dp"
                     android:gravity="center_horizontal|center_vertical"
                     android:lineSpacingExtra="-25sp"
-                    android:text="@string/some1_id"
+                    android:text="30"
                     android:textAppearance="@style/some1_id" />
+
 
 
             </RelativeLayout>
@@ -259,89 +258,69 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <RelativeLayout
-                    android:id="@+id/group_378"
-                    android:layout_width="175dp"
-                    android:layout_height="211dp"
-                    android:background="@drawable/group_378_t">
+                    android:id="@+id/redeemvaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/redeemvaganza"
+                    android:onClick="reedemvaganza">
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="28dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="97dp"
-                        android:layout_marginBottom="123dp"
-                        android:background="@drawable/pls_mns" />
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="55dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="@string/redeemvaganza"
+                        android:textColor="@color/sea_blue"
+                        android:textSize="13sp" />
+
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/group_379"
-                    android:layout_width="175dp"
-                    android:layout_height="211dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="-2dp"
-                    android:background="@drawable/group_379_t">
+                    android:id="@+id/ektravaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/redeemvaganza"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ekstravaganza"
+                    android:onClick="wheel">
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="28dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="97dp"
-                        android:layout_marginBottom="123dp"
-                        android:background="@drawable/pls_mns" />
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="55dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="@string/ektravaganza"
+                        android:textColor="@color/sea_blue"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/royalvaganza"
+                    android:layout_below="@id/ektravaganza"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/royalvaganza">
+
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/royalvaganza"
+                        android:fontFamily="@font/montserratbold"
+                        android:textSize="13dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginLeft="32dp"
+                        android:textColor="@color/sea_blue"/>
+
                 </RelativeLayout>
 
             </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/w1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <RelativeLayout
-                    android:layout_width="175dp"
-                    android:layout_height="211dp"
-                    android:background="@drawable/group_380_t">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="28dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="97dp"
-                        android:layout_marginBottom="123dp"
-                        android:background="@drawable/pls_mns" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="175dp"
-                    android:layout_height="211dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="-2dp"
-                    android:background="@drawable/group_381_t">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="28dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="97dp"
-                        android:layout_marginBottom="123dp"
-                        android:background="@drawable/pls_mns" />
-                </RelativeLayout>
-
-            </RelativeLayout>
-
 
             <TextView
                 android:id="@+id/vaganza_fie"

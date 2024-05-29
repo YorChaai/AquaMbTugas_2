@@ -13,13 +13,13 @@
         android:layout_height="31dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="11dp"
+        android:layout_marginStart="41dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/vector"
+            android:id="@+id/back2"
             android:layout_width="25dp"
             android:layout_height="20dp"
             android:layout_alignParentStart="true"
@@ -46,40 +46,44 @@
         android:id="@+id/rectangle_password"
         android:layout_width="347dp"
         android:layout_height="59dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="284dp"
         android:background="@drawable/button1"
         android:backgroundTint="@color/blue2"
-        android:textColor="@color/white"
-        android:fontFamily="@font/montserrat_regular"
-        android:text="Poin Anda                                                     300"
         android:drawablePadding="20dp"
+        android:fontFamily="@font/montserrat_regular"
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:text="Poin Anda                                                     300"
+        android:textColor="@color/white"
+        android:onClick="redeemvolume1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/menus"
+        android:layout_marginTop="-220dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_password">
-
         <ImageView
             android:id="@+id/group_378a"
             android:layout_width="175dp"
             android:layout_height="211dp"
-            android:background="@drawable/group_378a" />
-
+            android:onClick="redeemvolume1"
+            android:background="@drawable/group_378a"
+            />
         <ImageView
             android:id="@+id/group_379a"
             android:layout_width="175dp"
             android:layout_height="211dp"
-            android:background="@drawable/group_379a" />
+            android:background="@drawable/group_380a"
+            />
 
     </LinearLayout>
 
@@ -94,7 +98,7 @@
             android:id="@+id/group_380a"
             android:layout_width="175dp"
             android:layout_height="211dp"
-            android:background="@drawable/group_380a"
+            android:background="@drawable/group_379a"
             />
         <ImageView
             android:id="@+id/group_870a"

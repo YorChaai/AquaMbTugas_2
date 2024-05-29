@@ -14,11 +14,12 @@ public class Redeemvolume2 extends AppCompatActivity {
         setContentView(R.layout.activity_redeemvolume2);
     }
         public void back(View view) {
-            Intent intent = new Intent(Redeemvolume2.this,Redeemvolume1.class);
+            Intent intent = new Intent(Redeemvolume2.this,Mainwebsite1.class);
             startActivity(intent );
     }
-        public void spin(View view) {
-            Intent intent = new Intent(Redeemvolume2.this,spinwheel1.class);
+        public void redeemvolume1(View view) {
+            Intent intent = new Intent(Redeemvolume2.this,Redeemvolume1.class);
             startActivity(intent );
+
     }
 }

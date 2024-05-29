@@ -1,16 +1,18 @@
 package com.example.myapplication;
 
-import android.content.Context;
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -20,8 +22,10 @@ import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
 import com.budiyev.android.codescanner.ErrorCallback;
 import com.budiyev.android.codescanner.ScanMode;
+import com.google.zxing.Result;
 
 public class Scan_ktpaqua extends AppCompatActivity {
+
     private static final int CAMERA_REQUEST_CODE = 101;
     private CodeScanner codeScanner;
     private CodeScannerView scannerView;
@@ -32,31 +36,31 @@ public class Scan_ktpaqua extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan_ktpaqua);
 
-        Button menu2 = findViewById(R.id.back2);
-        menu2.setOnClickListener(view -> {
-            Intent intent = new Intent(Scan_ktpaqua.this, Scan_tutupbotolaqua.class);
+        Button back2 = findViewById(R.id.back2);
+        back2.setOnClickListener(view -> {
+            Intent intent = new Intent(Scan_ktpaqua.this, Mainwebsite1.class);
             startActivity(intent);
         });
 
-        Button btnlogin2 = findViewById(R.id.submit2);
-        btnlogin2.setOnClickListener(view -> {
+        Button submit2 = findViewById(R.id.submit2);
+        submit2.setOnClickListener(view -> {
             Intent intent = new Intent(Scan_ktpaqua.this, Selamat_claimtutupbotolaqua.class);
             startActivity(intent);
         });
         Button cancel2 = findViewById(R.id.cancel2);
         cancel2.setOnClickListener(view -> {
-            Intent intent = new Intent(Scan_ktpaqua.this, Scan_tutupbotolaqua.class);
+            Intent intent = new Intent(Scan_ktpaqua.this, Mainwebsite1.class);
             startActivity(intent);
         });
 
         tv_textView = findViewById(R.id.tv_textView);
+        scannerView = findViewById(R.id.scanner_view);
 
         setupPermission();
-        scannerView = findViewById(R.id.scanner_view);
         codeScanner();
     }
-
     private void codeScanner() {
+        final ImageView imageView = findViewById(R.id.img_textView);
         codeScanner = new CodeScanner(this, scannerView);
 
         codeScanner.setCamera(CodeScanner.CAMERA_BACK);
@@ -66,11 +70,45 @@ public class Scan_ktpaqua extends AppCompatActivity {
         codeScanner.setAutoFocusEnabled(true);
         codeScanner.setFlashEnabled(true);
 
-        codeScanner.setDecodeCallback(result -> runOnUiThread(() -> tv_textView.setText(result.getText())));
+        codeScanner.setDecodeCallback(new DecodeCallback() {
+            @Override
+            public void onDecoded(@NonNull final Result result) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        imageView.setVisibility(View.VISIBLE);
+                        if (result.getText().equals("TEKS YANG DIHARAPKAN")) { // Ganti dengan teks yang diharapkan
+                            // Jika scan berhasil
+                            imageView.setImageResource(R.drawable.gagalscan); // Menampilkan gambar accscan.png
+                        } else {
+                            // Jika scan gagal
+                            imageView.setImageResource(R.drawable.accscan); // Menampilkan gambar gagalscan.png
+                        }
+                    }
+                });
+            }
+        });
 
-        codeScanner.setErrorCallback(error -> runOnUiThread(() -> Log.e("main", "camera error, " + error.getMessage())));
 
-        scannerView.setOnClickListener(view -> codeScanner.startPreview());
+        codeScanner.setErrorCallback(new ErrorCallback() {
+            @Override
+            public void onError(@NonNull final Throwable error) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Log.e("main", "camera error, " + error.getMessage());
+                    }
+                });
+            }
+        });
+
+
+        scannerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                codeScanner.startPreview();
+            }
+        });
     }
 
     @Override
@@ -82,13 +120,11 @@ public class Scan_ktpaqua extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        codeScanner.releaseResources();
     }
 
     private void setupPermission() {
-        int permission = ContextCompat.checkSelfPermission(
-                this,
-                android.Manifest.permission.CAMERA
-        );
+        int permission = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
 
         if (permission != PackageManager.PERMISSION_GRANTED) {
             makeRequest();
@@ -96,19 +132,11 @@ public class Scan_ktpaqua extends AppCompatActivity {
     }
 
     private void makeRequest() {
-        ActivityCompat.requestPermissions(
-                this,
-                new String[]{android.Manifest.permission.CAMERA},
-                CAMERA_REQUEST_CODE
-        );
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CAMERA_REQUEST_CODE);
     }
 
     @Override
-    public void onRequestPermissionsResult(
-            int requestCode,
-            @NonNull String[] permissions,
-            @NonNull int[] grantResults
-    ) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == CAMERA_REQUEST_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {

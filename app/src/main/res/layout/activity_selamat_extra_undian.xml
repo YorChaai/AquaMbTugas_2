@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:scaleType="fitXY"
     android:background="@drawable/group_17"
-    tools:context=".selamat_undian">
+    tools:context=".SelamatExtraUndian">
 
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="381dp"
+        android:layout_height="67dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="268dp"
         android:gravity="center"
@@ -31,7 +31,7 @@
         android:background="@drawable/button2"
         android:fontFamily="@font/montserratsemibold"
         android:gravity="center"
-        android:onClick="spinwheel2"
+        android:onClick="spinwheel1"
         android:text="@string/klaim"
         android:textColor="@color/blue2"
         android:textSize="18dp"

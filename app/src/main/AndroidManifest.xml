@@ -19,10 +19,19 @@
             android:name=".Selamat_claimtutupbotolaqua"
             android:exported="true" />
         <activity
+            android:name=".SelamatExtraUndian"
+            android:exported="true" />
+        <activity
             android:name=".Scan_tutupbotolaqua"
             android:exported="true" />
         <activity
             android:name=".Scan_ktpaqua"
+            android:exported="true" />
+        <activity
+            android:name=".spinwheel1"
+            android:exported="true" />
+        <activity
+            android:name=".spinwheel2"
             android:exported="true" />
         <activity
             android:name=".Redeemvolume1"

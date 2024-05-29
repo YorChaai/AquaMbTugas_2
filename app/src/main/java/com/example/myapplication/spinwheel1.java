@@ -2,7 +2,9 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import android.os.CountDownTimer;
 import android.view.View;
@@ -15,7 +17,12 @@ public class spinwheel1 extends AppCompatActivity {
 
     Button btnSpin;
     ImageView ivWheel;
-    CountDownTimer timer;
+    Handler handler;
+    Runnable runnable;
+    int totalRotation;
+    boolean isSpinning;
+    long startTime;
+    long duration; // Total duration of spin in milliseconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,44 +30,65 @@ public class spinwheel1 extends AppCompatActivity {
         setContentView(R.layout.activity_spinwheel1);
 
         btnSpin = findViewById(R.id.rectangle_11);
-        ivWheel = findViewById(R.id.wheel);
-
-        Random random = new Random();
+        ivWheel = findViewById(R.id.wheel_bg);
+        handler = new Handler();
 
         btnSpin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // disabling the button so that user
-                // should not click on the button
-                // while the wheel is spinning
                 btnSpin.setEnabled(false);
-
-                // reading random value between 10 to 30
-                int spin = random.nextInt(20)+10;
-
-                // since the wheel has 10 divisions, the
-                // rotation should be a multiple of
-                // 360/10 = 36 degrees
-                spin = spin * 36;
-
-                // timer for each degree movement
-                timer = new CountDownTimer(spin*20,1) {
-                    @Override
-                    public void onTick(long l) {
-                        // rotate the wheel
-                        float rotation = ivWheel.getRotation() + 2;
-                        ivWheel.setRotation(rotation);
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        // enabling the button again
-                        btnSpin.setEnabled(true);
-                    }
-                }.start();
-
+                startSpin();
             }
         });
+    }
 
+    private void startSpin() {
+        Random random = new Random();
+        totalRotation = (random.nextInt(20) + 10) * 67; // Random total rotation between 360 and 1080 degrees
+        duration = (random.nextInt(3) + 2) * 1000; // Random duration between 2 and 4 seconds
+        isSpinning = true;
+        startTime = System.currentTimeMillis();
+
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                if (isSpinning) {
+                    long currentTime = System.currentTimeMillis();
+                    long elapsedTime = currentTime - startTime;
+                    float fraction = (float) elapsedTime / duration;
+                    float easedFraction = cubicEaseOut(fraction);
+
+                    float rotation = totalRotation * easedFraction;
+                    ivWheel.setRotation(rotation);
+
+                    if (fraction >= 1.0) {
+                        isSpinning = false;
+                        btnSpin.setEnabled(true);
+
+                        // Intent to move to the next activity
+                        Intent intent = new Intent(spinwheel1.this, Scan_ktpaqua.class);
+                        startActivity(intent);
+                        finish(); // Optional: Close the current activity
+
+                    } else {
+                        handler.postDelayed(this, 16); // Approximately 60 FPS
+                    }
+                }
+            }
+        };
+
+        handler.post(runnable);
+    }
+
+    // Cubic easing out function
+    private float cubicEaseOut(float t) {
+        return 1 - (float)Math.pow(1 - t, 3);
+    }
+
+
+
+    public void back(View view) {
+        Intent intent = new Intent(spinwheel1.this, Mainwebsite1.class);
+        startActivity(intent);
     }
 }

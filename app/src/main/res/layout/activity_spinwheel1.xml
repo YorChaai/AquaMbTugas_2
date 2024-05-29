@@ -25,6 +25,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
             android:background="@drawable/panah1"
+            android:onClick="back"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
@@ -45,31 +46,31 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="248dp"
         android:background="@drawable/group_915"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/group_385" />
 
     <ImageView
         android:id="@+id/wheel_bg"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="307dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/wheel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/wheel"
-        android:layout_width="315dp"
-        android:layout_height="315dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="338dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/arrow_wheel"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -77,11 +78,12 @@
         android:id="@+id/rectangle_11"
         android:layout_width="347dp"
         android:layout_height="70dp"
-        android:layout_marginTop="656dp"
+        android:layout_marginTop="692dp"
         android:background="@drawable/rectangle_11"
         android:text="Redeem"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

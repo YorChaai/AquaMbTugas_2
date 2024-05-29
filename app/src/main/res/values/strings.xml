@@ -55,6 +55,9 @@ Poin Anda
     <string name="scan_tutup_">
 Scan Tutup Botol
 </string>
+    <string name="scan_ktp">
+Scan KTP
+</string>
 
     <string name="total_tutup">
 Total Tutup Botol\n<b>Olivia Gabrielle</b> <font color="#1A529D">30</font>
@@ -83,4 +86,10 @@ RedeemVaganza
     <string name="selamatklaim">
         Selamat Anda Mendapatkan Undian ExtraVaganza🎉
     </string>
+
+    <string name="redeemvaganza">Pengguna aplikasi bisa melakukan penukaran\nmandiri untuk mendapatkan hadiah</string>
+    <string name="ektravaganza">Pengguna aplikasi dapat memenangkan\nundian hadiah secara reguler</string>
+    <string name="royalvaganza">Pengguna aplikasi dapat memenangkan\nundian hadiah royal (big prize)</string>
+    <string name="surprise_gift">Surprise Gift</string>
+    <string name="nikmati_kesempatan_spesial_setiap_bulan_n_bagi_100_pengguna_paling_aktif_kami_n_hadiah_menarik_menanti">Nikmati kesempatan spesial setiap bulan\nbagi 100 pengguna paling aktif kami!\nHadiah menarik menanti</string>
 </resources>
